@@ -10,6 +10,13 @@ public class Utm
         Campaign = campaign;
     }
 
+    /// <summary>
+    /// URL (Website Link)
+    /// </summary>
     public Url Url { get; }
+
+    /// <summary>
+    /// Campaign Details
+    /// </summary>
     public Campaign Campaign { get; }
 }
