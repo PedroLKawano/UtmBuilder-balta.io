@@ -19,4 +19,11 @@ public class Utm
     /// Campaign Details
     /// </summary>
     public Campaign Campaign { get; }
+
+    public override string ToString()
+    {
+        var segments = new List<string>();
+        segments.Add(Campaign.Source);
+        return $"{Url.Address}?{string.Join("&", segments)}";
+    }
 }
