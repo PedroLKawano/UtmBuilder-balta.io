@@ -1,4 +1,3 @@
-using System.Text;
 using UtmBuilder.Core.ValueObjects.Exceptions;
 
 namespace UtmBuilder.Core.ValueObjects;
