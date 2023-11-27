@@ -1,3 +1,4 @@
+using System.Data;
 using UtmBuilder.Core.Extensions;
 using UtmBuilder.Core.ValueObjects;
 using UtmBuilder.Core.ValueObjects.Exceptions;
@@ -57,5 +58,16 @@ public class Utm
         segments.AddIfNotNull("utm_term", Campaign.Term);
         segments.AddIfNotNull("utm_content", Campaign.Content);
         return $"{Url.Address}?{string.Join("&", segments)}";
+    }
+
+    public class Teste
+    {
+        public void Teste2()
+        {
+            var url = "http://balta.io/?utm_source=balta&utm_medium=balta&utm_campaign=balta&utm_content=balta&utm_term=balta";
+
+            Utm utm = url;
+            string utm2 = (Utm)url;
+        }
     }
 }
